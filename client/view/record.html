@@ -1,0 +1,31 @@
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width,initial-scale=1.0'>
+<title>录屏demo</title>
+<link rel="stylesheet" href="../style/common.css">
+</head>
+<body>
+  <div class="video-content">
+    <div class="localVideo-box">
+      <video id="localVideo" autoplay playsinline poster="../img/img1.jpg"></video>
+      <p>本地video</p>
+    </div>
+    <div class="remoteVideo-box">
+      <video id="remoteVideo" autoplay playsinline poster="../img/img2.jpg"></video>
+      <p>录制video</p>
+    </div>
+  </div>
+  <div style="text-align: center;">
+    <button id="getMeida">打开媒体流</button>
+    <button id="startRecord">开始录制</button>
+    <button id="stopRecord">结束录制</button>
+    <button id="uploadRecord">上传录制</button>
+    <button id="saveRecordToLocal">保存录制资源到本地</button>
+    <button id="showRecordVideo">展示录屏video</button>   
+  </div>
+  <script src="../lib/adapter-latest.js" ></script>
+  <script src="../js/record.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.video-content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.localVideo-box,
+.remoteVideo-box{
+  align-items: center;
+  margin: 30px 10px;
+  text-align: center;
+  overflow: hidden;
+}
+#localVideo,
+#remoteVideo{
+  width: 100%;
+  object-fit: fill;
+  width: 500px;
+  height: 300px;
+  border: 1px solid black;
+}
+.top-btn{
+  margin-top: 20px;
+  text-align: center;
+}
+.msg-box{
+  display: flex;
+  justify-content: space-around;
+  
+}
+#canvas{
+  border: 1px solid black;
+}

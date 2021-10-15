@@ -1,0 +1,60 @@
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width,initial-scale=1.0'>
+<title>基础例子</title>
+<link rel="stylesheet" href="../style/common.css">
+</head>
+<body>
+  <div class="top-btn">
+    <button id="sendCanvas">发送电子签名</button>
+    <button id="clearCanvas">清空画布</button>
+    <button id="closeCanvas">关闭电子签名</button>
+    <br>
+    <button id="checkDevice">检测设备信息</button>
+    <button id="deviceList">获取设备信息</button>    
+    <button id="bindWidthChange">修改码率</button>
+    <button id="getRate">网络信息查看</button>
+    <br>
+    <button id="shareScreen">屏幕共享</button>
+    <button id="closeShareScreen">关闭屏幕共享</button>
+    <button id="toggleCam">打开/关闭摄像头</button>
+    <button id="muted">麦克风开关切换</button>   
+  </div>
+  <div class="video-content">
+    <div class="localVideo-box">
+      <video id="localVideo" autoplay playsinline poster="../img/img1.jpg" muted></video>
+    </div>
+    <div class="remoteVideo-box">
+      <video id="remoteVideo" autoplay playsinline poster="../img/img2.jpg"></video>
+    </div>
+  </div>
+  <div style="text-align: center;">
+    <input type="text" id="roomName" value="100">
+    <button id="startButton">进入房间</button>
+    <button id="shareMedia">共享媒体流 </button>
+    <button id="hangupButton">挂断</button>
+  </div>
+  <div class="msg-box">
+    <div id="rateShow"  class="top-btn">
+      <p>发送音频：<span id="sendAudioRateHtml"></span></p>
+      <p>发送视频：<span id="sendVideoRateHtml"></span></p>
+      <p>接收音频: <span id="receiveAudioRateHtml"></span></p>
+      <p>接收视频: <span id="receiveVideoRateHtml"></span></p>
+    </div>
+    <div>
+      <canvas width="500px" height="300px" id="canvas"></canvas>
+    </div>
+  </div>
+   
+<script src="../lib/adapter-latest.js" ></script>
+<script src="../lib/socket.io.js"></script>
+<script src="../js/event.js"></script>
+<script src="../js/socket.js"></script>
+<script src="../lib/palette.js"></script>
+<script src="../js/handleMedia.js"></script>
+<script src="../js/RTC.js"></script>
+<script src="../js/base.js"></script>
+</body>
+</html>
